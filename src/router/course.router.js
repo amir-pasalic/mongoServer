@@ -3,11 +3,11 @@ import ctrl from '../controllers/courses.controller';
 
 const router = express.Router();
 
-router.route('/curses')
+router.route('/courses')
 .get(ctrl.list)
 .post(ctrl.create);
 
-router.route('/curses/:id')
+router.route('/courses/:id')
    .get(ctrl.read)
    .put(ctrl.update)
    .delete(ctrl.remove);
